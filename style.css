@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #6200ea;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.purchase-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.book-preview {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 2rem;
+}
+
+.book-preview img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 2rem;
+}
+
+.book-info {
+  max-width: 500px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #6200ea;
+  border: 2px solid #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #3700b3;
+  border-color: #3700b3;
+}
+
+.btn.secondary {
+  background-color: #03dac6;
+  color: #000;
+  border: none;
+}
+
+.btn.secondary:hover {
+  background-color: #00c4b4;
+  color: #000;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+}
