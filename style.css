@@ -3,6 +3,7 @@ body {
   margin: 0;
   background-color: #f4f4f4;
   color: #333;
+  line-height: 1.6;
 }
 
 header {
@@ -14,6 +15,7 @@ header {
 
 header h1 {
   margin-bottom: 0.5rem;
+  font-size: 2rem;
 }
 
 .purchase-buttons {
@@ -26,6 +28,8 @@ header h1 {
 
 main {
   padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .book-preview {
@@ -34,7 +38,7 @@ main {
   background: white;
   padding: 1rem;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin-top: 2rem;
 }
 
@@ -43,6 +47,7 @@ main {
   height: auto;
   border-radius: 8px;
   margin-right: 2rem;
+  margin-bottom: 1rem;
 }
 
 .book-info {
@@ -53,18 +58,18 @@ main {
   display: inline-block;
   background-color: #ffffff;
   color: #6200ea;
-  border: 2px solid #ffffff;
+  border: 2px solid #6200ea;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   font-weight: bold;
   text-decoration: none;
   font-size: 1rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #ffffff;
-  color: #3700b3;
+  background-color: #6200ea;
+  color: #fff;
   border-color: #3700b3;
 }
 
@@ -79,8 +84,46 @@ main {
   color: #000;
 }
 
+.book-description {
+  margin-top: 3rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.book-description h2 {
+  color: #6200ea;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.book-description ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.book-description ul li {
+  background: #f0f0f0;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid #6200ea;
+  border-radius: 4px;
+}
+
+blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  background-color: #f9f9f9;
+  border-left: 4px solid #6200ea;
+  font-style: italic;
+  color: #555;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
   background: #eee;
+  font-size: 0.9rem;
 }
