@@ -30,15 +30,17 @@ main {
   padding: 2rem 1rem;
 }
 
-.book-preview img {
-  max-width: 250px;
-  max-height: 350px;
-  width: auto;
-  height: auto;
-  border-radius: 8px;
-  margin-right: 2rem;
-  flex-shrink: 0;
-  object-fit: contain;
+.book-preview {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 2rem;
+  justify-content: center;
+  gap: 2rem;
+  align-items: flex-start; /* Dodajemy to, by obrazek nie rozciągał się */
 }
 
 .book-preview img {
@@ -46,7 +48,9 @@ main {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  margin-right: 2rem;
   flex-shrink: 0;
+  object-fit: contain;
 }
 
 .book-info {
