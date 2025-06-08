@@ -40,7 +40,7 @@ main {
   margin-top: 2rem;
   justify-content: center;
   gap: 2rem;
-  align-items: flex-start; /* Dodajemy to, by obrazek nie rozciągał się */
+  align-items: flex-start;
 }
 
 .book-preview img {
@@ -48,7 +48,6 @@ main {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  margin-right: 2rem;
   flex-shrink: 0;
   object-fit: contain;
 }
@@ -60,8 +59,17 @@ main {
 
 .book-info h2 {
   margin-top: 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #6200ea;
+  line-height: 1.2;
+}
+
+.book-info h2 small {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #555;
+  margin-top: 0.3rem;
 }
 
 .book-info h3 {
