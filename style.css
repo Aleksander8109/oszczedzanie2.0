@@ -9,7 +9,7 @@ body {
 header {
   background-color: #6200ea;
   color: white;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
@@ -27,31 +27,57 @@ header h1 {
 }
 
 main {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
 .book-preview {
   display: flex;
   flex-wrap: wrap;
   background: white;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   margin-top: 2rem;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .book-preview img {
-  width: 250px;
+  max-width: 250px;
+  width: 100%;
   height: auto;
   border-radius: 8px;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
+  flex-shrink: 0;
 }
 
 .book-info {
-  max-width: 500px;
+  max-width: 600px;
+  flex: 1;
+}
+
+.book-info h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #6200ea;
+}
+
+.book-info h3 {
+  margin-top: 1.5rem;
+  color: #333;
+}
+
+.book-info ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.book-info blockquote {
+  background-color: #f0f0f0;
+  border-left: 4px solid #6200ea;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-style: italic;
+  color: #444;
 }
 
 .btn {
@@ -64,13 +90,13 @@ main {
   font-weight: bold;
   text-decoration: none;
   font-size: 1rem;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 1.5rem;
 }
 
 .btn:hover {
   background-color: #6200ea;
-  color: #fff;
-  border-color: #3700b3;
+  color: #ffffff;
 }
 
 .btn.secondary {
@@ -84,46 +110,9 @@ main {
   color: #000;
 }
 
-.book-description {
-  margin-top: 3rem;
-  background-color: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.book-description h2 {
-  color: #6200ea;
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
-}
-
-.book-description ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 1rem;
-}
-
-.book-description ul li {
-  background: #f0f0f0;
-  padding: 0.6rem 1rem;
-  margin-bottom: 0.5rem;
-  border-left: 4px solid #6200ea;
-  border-radius: 4px;
-}
-
-blockquote {
-  margin: 1.5rem 0;
-  padding: 1rem 1.5rem;
-  background-color: #f9f9f9;
-  border-left: 4px solid #6200ea;
-  font-style: italic;
-  color: #555;
-}
-
 footer {
   text-align: center;
   padding: 1rem;
   background: #eee;
-  font-size: 0.9rem;
+  margin-top: 2rem;
 }
